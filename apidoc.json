@@ -1,0 +1,10 @@
+{
+  "name": "Technologies",
+  "version": "1.0.0",
+  "description": "Technologies que contiene toda la lógica de Nuwe.io",
+  "title": "Technologies API",
+  "url": "https://technoliges.nuwe.io",
+  "header": {
+    "title": "Technoliges | Nuwe"
+  }
+}
