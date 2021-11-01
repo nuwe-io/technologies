@@ -1,4 +1,4 @@
-# NUWE LOGOS API
+# Technoloiges API
 
 API que contiene una lista de diferentes tecnologías del sector sofware.
 
