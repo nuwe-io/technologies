@@ -1,4 +1,14 @@
-node_modules
-npm-debu.log
-docs
-site
+# Project ignores
+.vscode
+
+# Dependency directories
+node_modules/
+
+# Node Version Manager
+.nvmrc
+
+# Yarn
+yarn.lock
+
+# NPM
+package-lock.json

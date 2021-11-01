@@ -2,9 +2,6 @@
   "name": "technologies",
   "version": "1.0.0",
   "description": "Technologies API",
-  "directories": {
-    "test": "test"
-  },
   "main": "dist/index.js",
   "scripts": {
     "start": "export NODE_ENV=production && ts-node -r dotenv-safe/config src/index.ts",
