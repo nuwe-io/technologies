@@ -4,6 +4,7 @@ API que contiene una lista de diferentes tecnologías del sector sofware.
 
 ## Install
 
+(not released the package yet)
 ```shell
 npm i @nuwe/technologies
 ```
@@ -24,7 +25,7 @@ Para utilizar la API:
 // Para utilizar con axios:
 import axios from "axios";
 
-const baseURL = "https://typescript.nuwe.io/";
+const baseURL = "https://technologies.nuwe.io/";
 const logoFileName = "azure.png";
 
 const azureLogo = () => axios.get(`${baseURL}/${logoFileName}`);
@@ -55,3 +56,11 @@ o a través de:
 ## Licence
 
 [MIT](https://opensource.org/licenses/MIT)
+
+## Stack
+
+- CosmosDB con MongoDB con deploy en Azure
+- TS
+- Node
+- AWS EBS con Docker --> deploy automático con cambios desde la rama main
+- AWS S3 para el file manager
