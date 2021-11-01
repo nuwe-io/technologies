@@ -3,10 +3,7 @@ import compress from 'compression'
 import helmet from 'helmet'
 import cors from 'cors'
 import methodOverride from 'method-override'
-import { connect } from './mongo'
 
-// Mongoose connection
-connect()
 
 const app: Application = express()
 
@@ -33,7 +30,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 /**
- * @api {test} /test 
+ * @api {test} /test
  */
 app.get('/test', (_, res: Response) => {
   res.send('Technologies API is up and running')
