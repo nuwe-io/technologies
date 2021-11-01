@@ -4,6 +4,7 @@ import { uploadFile, getFileStream } from '../../shared/services/aws'
 import path from 'path'
 import logos from '../../../toUpload.json'
 import Technology from '../infrastructure/mongo'
+import { Categories, TechnologyTypes, TechnologyTags } from '../domain/valueObjects'
 
 /**
  * Get Technologies list
@@ -110,4 +111,22 @@ export const bulkUpload = catchAsync(async (_req: Request, res: Response) => {
     console.log(`Technology created: ${technology.name}`)
   })
   res.status(200).json({ message: 'Skills and iamges created correctly' })
+})
+
+/**
+ * @description Get all technology enums by type
+ * @query {type}
+ * @eneums TechnologyTypes, TechnologyTags, Categories
+ */
+export const getTechnologyEnums = catchAsync(async (req: Request, res: Response) => {
+  const { type } = req.query
+  if (!type) res.status(400).json({ message: 'Selector is required' })
+
+  const objectRes: any = {
+    categories: Categories,
+    types: TechnologyTypes,
+    tags: TechnologyTags
+  }
+
+  res.status(200).json(objectRes[type!.toString()])
 })

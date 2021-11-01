@@ -5,7 +5,17 @@ import multer from 'multer'
 
 import { getKeyFromAWS } from '../../shared/middleware/fileManager'
 const upload = multer({ dest: 'uploads/' })
-import { add, list, get, remove, updateById, findByFileKey, bulkUpload } from './controller'
+import { add, list, get, remove, updateById, findByFileKey, bulkUpload, getTechnologyEnums } from './controller'
+
+/**
+ * @api {get} /get Get all technology enums
+ * @apiName GetTechnologyEnums
+ * @apiGroup Technology
+ * @apiDescription Get all technology enums
+ * @apiParam {type} key can be tags, types, categories
+ * @example http://localhost:3001/tech/get?type=tags
+ */
+router.get('/get', getTechnologyEnums)
 
 /**
  * @api {get} /tech/:fileKey Find Technology file
@@ -75,7 +85,7 @@ router.get('/find/:id', get)
  * @apiDescription  Uploads a list of technologies and creates the object at mongo
  * @apiName BulkUpload
  * @apiGroup Technologies
- * @apiPermission admin
+ * @apiPermission public
  */
 router.post('/bulkUpload', bulkUpload)
 
