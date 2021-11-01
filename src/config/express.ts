@@ -32,6 +32,9 @@ app.use(express.json())
 // parse urlencoded request body
 app.use(express.urlencoded({ extended: true }))
 
+/**
+ * @api {test} /test
+ */
 app.get('/test', (_, res: Response) => {
   res.send('Technologies API is up and running')
 })
