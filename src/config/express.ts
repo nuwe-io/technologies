@@ -33,7 +33,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 /**
- * @api {test} /test
+ * @api {test} /test 
  */
 app.get('/test', (_, res: Response) => {
   res.send('Technologies API is up and running')
