@@ -28,7 +28,7 @@ enum TechnologyTags {
   Lean = 'Lean',
   KISS = 'KISS',
   Microservices = 'Microservices',
-  kubernetes = 'kubernetes',
+  Kubernetes = 'Kubernetes',
   MVVM = 'MVVM',
   Hexagonal = 'Hexagonal',
   SSG = 'SSG',
@@ -38,13 +38,14 @@ enum TechnologyTags {
   REST = 'REST',
   SOAP = 'SOAP',
   Serverless = 'Serverless',
-  
+  Multithreaded = 'Multithreaded'
 }
 
 enum TechnologyTypes {
   Language = 'Language',
   Framework = 'Framework',
   Library = 'Library',
+  DataLibrary = 'Data science library',
   Tool = 'Tool',
   Database = 'Database',
   Automation = 'Automation',
@@ -59,15 +60,17 @@ enum Categories {
   Backend = 'Backend',
   DevOps = 'DevOps',
   Cloud = 'Cloud',
-  DataEngineering = 'Data Engineering',
-  MachineLearning = 'Machine Learning',
+  DataEngineering = 'Data engineering',
+  MachineLearning = 'Machine learning',
   DataScience = 'Data science',
   DataAnalyst = 'Data analyst',
   Algorithmic = 'Algorithmic',
   Mobile = 'Mobile',
   UXUI = 'UXUI',
   Gamedev = 'Gamedev',
-  Salesforce = 'Salesforce'
+  Salesforce = 'Salesforce',
+  Embedded = 'Embedded',
+  BigData = 'Big data'
 }
 
 export { TechnologyTags, TechnologyTypes, Categories }

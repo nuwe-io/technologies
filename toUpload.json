@@ -1,11 +1,208 @@
 [
   {
-    "name": "Next.js",
-    "shortname": "nextjs",
-    "url": "https://nextjs.org",
-    "file": "nextjs.svg",
-    "categories": ["Frontend", "Fullstack"],
-    "tags": ["SSG", "SSR", "SPA", "ISR", "Serverless"],
-    "type": "Framework"
+    "name": "C++",
+    "shortname": "c-plusplus",
+    "url": "https://isocpp.org/",
+    "file": "c-plusplus.svg",
+    "categories": ["Gamedev", "Embedded", "Algorithmic", "Machine learning", "Backend"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "C#",
+    "shortname": "c-sharp",
+    "url": "http://csharp.net/",
+    "file": "c-sharp.svg",
+    "categories": ["Backend", "Frontend", "Fullstack"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "C",
+    "shortname": "c",
+    "url": "https://en.wikipedia.org/wiki/C_(programming_language)",
+    "file": "c.svg",
+    "categories": ["Gamedev", "Algorithmic", "Machine learning", "Backend", "Embedded"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "Clojure",
+    "shortname": "clojure",
+    "url": "http://clojure.org/",
+    "file": "clojure.svg",
+    "categories": ["Backend", "Algorithmic"],
+    "tags": ["Functional Programming"],
+    "type": "Language"
+  },
+  {
+    "name": "CSS",
+    "shortname": "css-3",
+    "url": "http://www.w3.org/TR/CSS/",
+    "file": "css.svg",
+    "categories": ["Frontend"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "Dart",
+    "shortname": "dart",
+    "url": "https://dart.dev/",
+    "file": "dart.svg",
+    "categories": ["Mobile", "Backend", "Algorithmic"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "F#",
+    "shortname": "fsharp",
+    "url": "http://fsharp.org/",
+    "file": "fsharp.svg",
+    "categories": ["Frontend", "Backend", "Algorithmic", "Fullstack", "Data science", "Machine learning"],
+    "tags": ["Functional Programming"],
+    "type": "Language"
+  },
+  {
+    "name": "Go",
+    "shortname": "go",
+    "url": "https://golang.org/",
+    "file": "go.svg",
+    "categories": ["Backend", "Algorithmic", "Embedded"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "GraphQL",
+    "shortname": "graphql",
+    "url": "https://graphql.org",
+    "file": "graphql.svg",
+    "categories": ["Backend", "Data analyst", "Big data"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "Haskell",
+    "shortname": "haskell",
+    "url": "https://www.haskell.org/",
+    "file": "haskell.svg",
+    "categories": ["Backend", "Algorithmic", "Data analyst", "Data science", "Machine learning"],
+    "tags": ["Functional Programming"],
+    "type": "Language"
+  },
+  {
+    "name": "HTML",
+    "shortname": "html-5",
+    "url": "http://www.w3.org/TR/html5/",
+    "file": "html.svg",
+    "categories": ["Frontend"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "Java",
+    "shortname": "java",
+    "url": "https://www.java.com/",
+    "file": "java.svg",
+    "categories": ["Backend", "Frontend", "Algorithmic", "Mobile"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "Javascript",
+    "shortname": "javascript",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "file": "javascript.svg",
+    "categories": ["Frontend", "Backend", "Machine learning", "Algorithmic", "Gamedev", "Fullstack", "Mobile"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "Kotlin",
+    "shortname": "kotlin",
+    "url": "http://kotlinlang.org/",
+    "file": "kotlin.svg",
+    "categories": ["Mobile", "Algorithmic", "Backend"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "PHP",
+    "shortname": "php",
+    "url": "http://php.net/",
+    "file": "php.svg",
+    "categories": ["Backend"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "Python",
+    "shortname": "python",
+    "url": "https://www.python.org/",
+    "file": "python.svg",
+    "categories": [
+      "Data science",
+      "Data analyst",
+      "Frontend",
+      "Backend",
+      "Machine learning",
+      "Data engineering",
+      "Algorithmic"
+    ],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "R",
+    "shortname": "r",
+    "url": "https://www.r-project.org",
+    "file": "r.svg",
+    "categories": ["Data science", "Data analyst"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "Ruby",
+    "shortname": "ruby",
+    "url": "https://www.ruby-lang.org/",
+    "file": "ruby.svg",
+    "categories": ["Backend", "Algorithmic", "Frontend", "Fullstack"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "Rust",
+    "shortname": "rust",
+    "url": "http://www.rust-lang.org/",
+    "file": "rust.svg",
+    "categories": ["Backend", "Algorithmic", "Embedded"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "SQL",
+    "shortname": "sql",
+    "url": "https://ca.wikipedia.org/wiki/Structured_Query_Language",
+    "file": "sql.svg",
+    "categories": ["Backend"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "Swift",
+    "shortname": "swift",
+    "url": "https://developer.apple.com/swift/",
+    "file": "swift.svg",
+    "categories": ["Mobile", "Frontend"],
+    "tags": [],
+    "type": "Language"
+  },
+  {
+    "name": "Typescript",
+    "shortname": "typescript",
+    "url": "https://www.typescriptlang.org/",
+    "file": "typescript.svg",
+    "categories": ["Frontend", "Backend", "Fullstack", "Algorithmic", "Gamedev", "Mobile"],
+    "tags": [],
+    "type": "Language"
   }
 ]

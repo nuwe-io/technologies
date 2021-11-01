@@ -95,6 +95,7 @@ export const bulkUpload = catchAsync(async (_req: Request, res: Response) => {
       path: filePath,
       originalName: technology.file
     }
+
     const files = await uploadFile(file)
     const logoObj = {
       name: technology.name,
