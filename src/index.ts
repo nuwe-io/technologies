@@ -1,10 +1,16 @@
-import app from './config/express'
+import express, { Application, Response } from 'express'
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT
 
-// listen to requests
-const server = app.listen(PORT, () => {
-  return console.log(`server is running on port: ${PORT}`)
+const app: Application = express()
+
+// Documentation api
+app.use(express.static('public'))
+
+app.get('/user', (_, res: Response) => {
+  res.send('NUWE API is up and running')
 })
 
-export default server
+app.listen(PORT, () => {
+  return console.log(`server is running on PORT ${PORT}`)
+})
