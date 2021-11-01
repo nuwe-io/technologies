@@ -23,8 +23,9 @@ export const uploadFile = (file: any) => {
   const uploadParams = {
     Bucket: bucketName,
     Body: fileContent,
-    Key: file.originalName
-    //ContentType: file.mimetype
+    Key: file.originalName,
+    // ACL: 'public-read'
+    ContentType: file.mimetype
   }
 
   return s3.upload(uploadParams).promise()

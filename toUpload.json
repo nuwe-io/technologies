@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Next.js",
+    "shortname": "nextjs",
+    "url": "https://nextjs.org",
+    "file": "nextjs.svg",
+    "categories": ["Frontend", "Fullstack"],
+    "tags": ["SSG", "SSR", "SPA", "ISR", "Serverless"],
+    "type": "Framework"
+  }
+]

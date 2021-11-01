@@ -30,7 +30,15 @@ enum TechnologyTags {
   Microservices = 'Microservices',
   kubernetes = 'kubernetes',
   MVVM = 'MVVM',
-  Hexagonal = 'Hexagonal'
+  Hexagonal = 'Hexagonal',
+  SSG = 'SSG',
+  SSR = 'SSR',
+  SPA = 'SPA',
+  ISR = 'ISR',
+  REST = 'REST',
+  SOAP = 'SOAP',
+  Serverless = 'Serverless',
+  
 }
 
 enum TechnologyTypes {

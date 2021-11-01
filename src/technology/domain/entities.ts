@@ -1,8 +1,8 @@
 import { Option } from 'fp-ts/lib/Option'
 import { Categories, TechnologyTags, TechnologyTypes } from './valueObjects'
 
-type TechgnologyId = string
-type TechgnologyIds = TechgnologyId[]
+type TechnologyId = string
+type TechnologyIds = TechnologyId[]
 type TechnologyName = string
 type Shortname = string
 type Link = string
@@ -18,5 +18,5 @@ type Technology = {
   type: TechnologyTypes
 }
 
-export { TechgnologyId, TechgnologyIds, TechnologyName, Shortname }
+export { TechnologyId, TechnologyIds, TechnologyName, Shortname }
 export { Technology }

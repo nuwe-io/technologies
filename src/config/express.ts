@@ -4,7 +4,7 @@ import helmet from 'helmet'
 import cors from 'cors'
 import methodOverride from 'method-override'
 import { connect } from './mongo'
-
+import routes from '../routes'
 // Mongoose connection
 connect()
 
@@ -31,6 +31,9 @@ app.use(express.json())
 
 // parse urlencoded request body
 app.use(express.urlencoded({ extended: true }))
+
+// mount api routes
+app.use('/', routes)
 
 /**
  * @api {test} /test
