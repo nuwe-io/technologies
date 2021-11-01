@@ -3,7 +3,10 @@ import compress from 'compression'
 import helmet from 'helmet'
 import cors from 'cors'
 import methodOverride from 'method-override'
+import { connect } from './mongo'
 
+// Mongoose connection
+connect()
 
 const app: Application = express()
 
