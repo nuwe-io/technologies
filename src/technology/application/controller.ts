@@ -102,7 +102,7 @@ export const bulkUpload = catchAsync(async (_req: Request, res: Response) => {
       name: technology.name,
       shortname: technology.shortname,
       url: technology.url,
-      image: files.key,
+      image: files.Key,
       categories: technology.categories,
       tags: technology.tags,
       type: technology.type

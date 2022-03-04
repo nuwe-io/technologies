@@ -1,15 +1,15 @@
-const S3 = require('aws-sdk/clients/s3')
-const fs = require('fs')
+import S3 from 'aws-sdk/clients/s3'
+import fs from 'fs'
 
-const bucketName = process.env.AWS_BUCKET_NAME
+const bucketName = <string>process.env.AWS_BUCKET_NAME
 const region = process.env.AWS_REGION
 const accessKey = process.env.AWS_ACCESS_KEY_ID
 const secretKey = process.env.AWS_SECRET_ACCESS_KEY
 
 const s3 = new S3({
   region,
-  accessKey,
-  secretKey
+  accessKeyId: accessKey,
+  secretAccessKey: secretKey
 })
 
 /**
@@ -23,8 +23,8 @@ export const uploadFile = (file: any) => {
   const uploadParams = {
     Bucket: bucketName,
     Body: fileContent,
-    Key: file.originalName,
-    // ACL: 'public-read'
+    Key: file.originalname,
+    ACL: 'public-read',
     ContentType: file.mimetype
   }
 

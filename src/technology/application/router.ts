@@ -1,11 +1,23 @@
-import express from 'express'
-const router = express.Router()
+import { Router } from 'express'
 
 import multer from 'multer'
 
 import { getKeyFromAWS } from '../../shared/middleware/fileManager'
-const upload = multer({ dest: 'uploads/' })
 import { add, list, get, remove, updateById, findByFileKey, bulkUpload, getTechnologyEnums } from './controller'
+
+const router = Router()
+const upload = multer({ dest: 'uploads/' })
+
+/**
+ * @api {post} /tech/withImage Add with image
+ * @apiDescription Add a new database object + upload the Technology image to AWS
+ * @apiName AddImageLogo
+ * @apiGroup Technologies
+ * @apiPermission public
+ */
+router.post('/withImage', upload.single('image'), getKeyFromAWS, (req, res) => {
+  res.send(req.body)
+})
 
 /**
  * @api {get} /get Get all technology enums
@@ -35,15 +47,6 @@ router.get('/:fileKey', findByFileKey)
  * @apiPermission public
  */
 router.post('/', add)
-
-/**
- * @api {post} /tech/withImage Add with image
- * @apiDescription Add a new database object + upload the Technology image to AWS
- * @apiName AddImageLogo
- * @apiGroup Technologies
- * @apiPermission public
- */
-router.post('/withImage/', upload.single('image'), getKeyFromAWS, add)
 
 /**
  * @api {patch} /tech/{id} Upadte Technology
